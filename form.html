@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <title>User Information Form</title>
+</head>
+<body>
+    <h1>User Information Form AS2</h1>
+    <br>
+    <form action="submit.php" method="post">
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" required><br><br>
+        
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        
+        <label>Enrolled in College:</label><br>
+        <input type="radio" id="college-yes" name="college-enrollment" value="yes">
+        <label for="college-yes">Yes</label>
+        
+        <input type="radio" id="college-no" name="college-enrollment" value="no">
+        <label for="college-no">No</label><br><br>
+        
+        <label>Checkboxes:</label><br>
+        <input type="checkbox" id="has-car" name="has-car" value="yes">
+        <label for="has-car">Has Car</label><br>
+        
+        <input type="checkbox" id="has-laptop" name="has-laptop" value="yes">
+        <label for="has-laptop">Has Laptop</label><br>
+        
+        <input type="checkbox" id="lives-on-campus" name="lives-on-campus" value="yes">
+        <label for="lives-on-campus">Lives on Campus</label><br><br>
+        
+        <label for="comment">Comment:</label><br>
+        <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
